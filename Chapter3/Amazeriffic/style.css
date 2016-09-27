@@ -1,5 +1,6 @@
 body {
   background: #f9e933;
+  margin: 0px;
 }
 
 header, main, footer {
@@ -19,11 +20,27 @@ header {
 header h1 {
   float: left;
   width: 570px;
+  font-size: 300%;
+  font-style: italic;
+  color: #ab0000;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+p, a, h5, ul, li {
+  font-family: 'Droid Sans', sans-serif;
 }
 
 header nav {
   float: right;
   width: 285px;
+  padding-top: 5%;
+}
+
+nav a{
+  color: #ab0000;
 }
 
 main {
@@ -39,6 +56,10 @@ main .left {
 main .right {
   float: right;
   width: 285px;
+}
+
+#bg{
+  background: #f9e933;
 }
 
 footer .left {
