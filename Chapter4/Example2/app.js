@@ -1,4 +1,4 @@
-/* jshint browser: true, jquery: true, camelcase: true, indent: 2, undef: true, quotmark: single, maxlen: 80, trailing: true, curly: true, eqeqeq: true, forin: true, immed: true, latedef: true, newcap: true, nonew: true, unused: true, strict: true */
+/* jshint browser: true, jquery: true, camelcase: true, indent: 2, undef: true, quotmark: single, maxlen: 100, trailing: true, curly: true, eqeqeq: true, forin: true, immed: true, latedef: true, newcap: true, nonew: true, unused: true, strict: true */
 
 var main = function () {
     'use strict';
@@ -7,7 +7,7 @@ var main = function () {
         var $newComment;
 
         if ($('.comment-input-1 input').val() !== '') {
-            $newComment = $('<p>').text($('.comment-input-1 input').val());
+            $newComment = $('<p class="colors1">').text($('.comment-input-1 input').val());
             $newComment.hide();
             $('.comments').append($newComment);
             $newComment.fadeIn();
@@ -15,18 +15,18 @@ var main = function () {
         }
     };
     var addCommentFromInputBox2 = function () {
-        var $newComment;
+        var $newComment2;
 
         if ($('.comment-input-2 input').val() !== '') {
-            $newComment = $('<p>').text($('.comment-input-2 input').val());
-            $newComment.hide();
-            $('.comments').append($newComment);
-            $newComment.fadeIn();
+            $newComment2 = $('<p class="colors2">').text($('.comment-input-2 input').val());
+            $newComment2.hide();
+            $('.comments').append($newComment2);
+            $newComment2.fadeIn();
             $('.comment-input-2 input').val('');
         }
     };
 
-    $('.comment-input-1 button').on('click', function (event) {
+    $('.comment-input-1 button').on('click', function () {
         addCommentFromInputBox();
     });
 
@@ -36,7 +36,7 @@ var main = function () {
         }
     });
 
-    $('.comment-input-2 button').on('click', function (event) {
+    $('.comment-input-2 button').on('click', function () {
         addCommentFromInputBox2();
     });
 

@@ -34,7 +34,7 @@ main {
   border-bottom: 1px solid darkslategray;
 }
 
-
+/*Input for user 1*/
 .comment-input-1 {
   float: left;
   width: 285px;
@@ -61,6 +61,8 @@ main {
   font-size: 1.5em;
   margin-left: 5px;
 }
+
+/*Input for user 1*/
 .comment-input-2 {
   float: left;
   width: 285px;
@@ -88,23 +90,41 @@ main {
   margin-left: 5px;
 }
 
+/*Comment box*/
 .comments {
+  width: 565px;
+  min-height: 200px;
   float: right;
-  width: 570px;
 }
 
 .comments p {
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
+  text-align: left;
 }
 
-.comments p:nth-child(even) {
-    background: #fff59d;
+/*user 1 Comments*/
+.colors1:nth-child(even) {
+    background: lavender;
 }
 
-.comments p:nth-child(odd) {
+.colors1:nth-child(odd) {
     background: gainsboro;
+}
+
+/*user 2 Comments*/
+.colors2 {
+
+}
+.colors2:nth-child(even) {
+    background: #fff59d;
+    text-align: right;
+}
+
+.colors2:nth-child(odd) {
+    background: rgba(251, 192, 45, 0.8);
+    text-align: right;
 }
 
 footer {
