@@ -107,10 +107,6 @@ main {
     background: gainsboro;
 }
 
-.comments .msg p {
-  background: #796c6c;
-}
-
 footer {
     font-size: smaller;
     margin-top: 5px;
